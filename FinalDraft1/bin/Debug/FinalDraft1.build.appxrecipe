@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SHASH</Machine>
+    <WindowsUser>Shashvat</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>7220cfd8-d83f-4556-95e9-8b1d09a36e8f</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\bld\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\css\phone.css">
+      <PackagePath>css\phone.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\audio\audio.css">
+      <PackagePath>pages\audio\audio.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.css">
+      <PackagePath>pages\FileManager\filemanager.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\hubPhone.css">
+      <PackagePath>pages\hub\hubPhone.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\item\item.css">
+      <PackagePath>pages\item\item.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\css\ui-themed.css">
+      <PackagePath>css\ui-themed.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\css\ui-themed.theme-dark.css">
+      <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\css\ui-themed.theme-light.css">
+      <PackagePath>css\ui-themed.theme-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\keyboard\keyboard.css">
+      <PackagePath>pages\keyboard\keyboard.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\mouse\mouse.css">
+      <PackagePath>pages\mouse\mouse.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\stream\stream.css">
+      <PackagePath>pages\stream\stream.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.css">
+      <PackagePath>pages\video\video.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\gray.png">
+      <PackagePath>images\gray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\data.js">
+      <PackagePath>js\data.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\audio\audio.js">
+      <PackagePath>pages\audio\audio.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\data.js">
+      <PackagePath>pages\FileManager\data.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.js">
+      <PackagePath>pages\FileManager\filemanager.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\hub.js">
+      <PackagePath>pages\hub\hub.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section1Page.js">
+      <PackagePath>pages\hub\section1Page.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section2Page.js">
+      <PackagePath>pages\hub\section2Page.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section3Page.js">
+      <PackagePath>pages\hub\section3Page.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section4Page.js">
+      <PackagePath>pages\hub\section4Page.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\item\item.js">
+      <PackagePath>pages\item\item.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\keyboard\keyboard.js">
+      <PackagePath>pages\keyboard\keyboard.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\mouse\mouse.js">
+      <PackagePath>pages\mouse\mouse.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\stream\stream.js">
+      <PackagePath>pages\stream\stream.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.js">
+      <PackagePath>pages\video\video.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\Scripts\jquery-2.1.3.intellisense.js">
+      <PackagePath>Scripts\jquery-2.1.3.intellisense.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\Scripts\jquery-2.1.3.js">
+      <PackagePath>Scripts\jquery-2.1.3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\Scripts\jquery-2.1.3.min.js">
+      <PackagePath>Scripts\jquery-2.1.3.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\packages.config">
+      <PackagePath>packages.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\audio\audio.html">
+      <PackagePath>pages\audio\audio.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.html">
+      <PackagePath>pages\FileManager\filemanager.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\hub.html">
+      <PackagePath>pages\hub\hub.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section1Page.html">
+      <PackagePath>pages\hub\section1Page.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section2Page.html">
+      <PackagePath>pages\hub\section2Page.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section3Page.html">
+      <PackagePath>pages\hub\section3Page.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section4Page.html">
+      <PackagePath>pages\hub\section4Page.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\item\item.html">
+      <PackagePath>pages\item\item.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\keyboard\keyboard.html">
+      <PackagePath>pages\keyboard\keyboard.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\mouse\mouse.html">
+      <PackagePath>pages\mouse\mouse.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\stream\stream.html">
+      <PackagePath>pages\stream\stream.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.html">
+      <PackagePath>pages\video\video.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\Scripts\jquery-2.1.3.min.map">
+      <PackagePath>Scripts\jquery-2.1.3.min.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

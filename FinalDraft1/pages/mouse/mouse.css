@@ -1,0 +1,46 @@
+﻿/* style the canvas element with a black border. */
+canvas {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    background-color:lightgray;
+    -ms-touch-action: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.mouse section {
+	margin: auto 120px;
+}
+
+.phone .mouse .page-section {
+	margin: auto 24px;
+}
+
+.phone .mouse .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .mouse .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
