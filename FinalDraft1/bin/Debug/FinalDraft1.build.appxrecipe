@@ -91,9 +91,6 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\audio\audio.js">
       <PackagePath>pages\audio\audio.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\data.js">
-      <PackagePath>pages\FileManager\data.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.js">
       <PackagePath>pages\FileManager\filemanager.js</PackagePath>
     </AppxPackagedFile>

@@ -63,7 +63,6 @@
     <Content Include="pages\audio\audio.css" />
     <Content Include="pages\audio\audio.html" />
     <Content Include="pages\audio\audio.js" />
-    <Content Include="pages\FileManager\data.js" />
     <Content Include="pages\FileManager\filemanager.css" />
     <Content Include="pages\FileManager\filemanager.html" />
     <Content Include="pages\FileManager\filemanager.js" />

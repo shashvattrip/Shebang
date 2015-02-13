@@ -17,7 +17,6 @@ packages.config
 pages\audio\audio.css
 pages\audio\audio.html
 pages\audio\audio.js
-pages\FileManager\data.js
 pages\FileManager\filemanager.css
 pages\FileManager\filemanager.html
 pages\FileManager\filemanager.js
