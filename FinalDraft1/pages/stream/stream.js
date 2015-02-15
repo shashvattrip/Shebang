@@ -8,6 +8,7 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
+            //var elem = document.querySelector("#videoDiv").win
         },
 
         unload: function () {

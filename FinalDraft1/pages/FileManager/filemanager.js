@@ -41,7 +41,7 @@
                    } else if (items.contents[ctr].type == "folder") {
                        article.type = "/images/folder1.png";
                    } else {
-                       article.type = "/images/gray.png";
+                       article.type = "/images/file.png";
                    }
                    articlesList.push(article);
                }

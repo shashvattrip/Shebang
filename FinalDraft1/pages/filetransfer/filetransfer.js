@@ -74,7 +74,9 @@
                 var request = WinJS.xhr(options);
                 request.done(function (response) {
                     console.log("Upload successful!");
-                    console.log(response);
+                    console.log(response.responseText);
+                    var doneMsg = new Windows.UI.Popups.MessageDialog("Yeah! File transfered to :" + response.responseText);
+                    doneMsg.showAsync();
 
                 }, function (error) {
                     console.log("error");

@@ -51,6 +51,7 @@
     <Content Include="css\phone.css" />
     <Content Include="images\abstract-background-images.png" />
     <Content Include="images\accelo.jpg" />
+    <Content Include="images\file.png" />
     <Content Include="images\filetransfer.png" />
     <Content Include="images\folder.png" />
     <Content Include="images\folder1.png" />

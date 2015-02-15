@@ -70,6 +70,9 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\abstract-background-images.png">
       <PackagePath>images\abstract-background-images.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\file.png">
+      <PackagePath>images\file.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\filetransfer.png">
       <PackagePath>images\filetransfer.png</PackagePath>
     </AppxPackagedFile>

@@ -9,14 +9,22 @@
 </head>
 <body>
     <div class="stream fragment">
-        <header class="page-header" aria-label="Header content" role="banner">
-            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+        <header aria-label="Header content" role="banner">
+            <button class="titlearea backbutton" data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to stream</span>
+                <span class="pagetitle" style="font-size:20px;">KONNECT</span>
+            </h1>
+        </header>
+        <header class="page-header" aria-label="Header content" role="banner" style="margin-bottom:100px;">
+            <!--<button class="back-button" data-win-control="WinJS.UI.BackButton"></button>-->
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="" style="font-size:60px;font-weight:400;">stream</span>
             </h1>
         </header>
         <section class="page-section" aria-label="Main content" role="main">
-            <p>Content goes here.</p>
+            <video id="videoDiv" controls="controls" width="75%">
+                <source src="http://192.168.1.15:8080/static/conquest.mp4" type="video/mp4" />
+            </video>
         </section>
     </div>
 </body>
