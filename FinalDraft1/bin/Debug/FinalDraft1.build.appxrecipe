@@ -58,6 +58,9 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.css">
       <PackagePath>pages\video\video.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\vlc\vlc.css">
+      <PackagePath>pages\vlc\vlc.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\abstract-background-images.png">
       <PackagePath>images\abstract-background-images.png</PackagePath>
     </AppxPackagedFile>
@@ -70,24 +73,26 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\joystick.png">
       <PackagePath>images\joystick.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\keyboard.png">
+      <PackagePath>images\keyboard.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square150x150Logo.scale-240.png">
       <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square44x44Logo.scale-240.png">
       <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\stream.png">
+      <PackagePath>images\stream.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\VLC.png">
       <PackagePath>images\VLC.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Wide310x150Logo.scale-240.png">
       <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square71x71Logo.scale-240.png">
       <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\SplashScreen.scale-240.png">
       <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
@@ -106,11 +111,29 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\konnect.jpg">
       <PackagePath>images\konnect.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\logo150.jpg">
+      <PackagePath>images\logo150.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\logo310x150.jpg">
+      <PackagePath>images\logo310x150.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\logo44.jpg">
+      <PackagePath>images\logo44.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\logo71.jpg">
+      <PackagePath>images\logo71.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\data.js">
       <PackagePath>js\data.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\default.js">
       <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\globals.js">
+      <PackagePath>js\globals.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -159,6 +182,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.js">
       <PackagePath>pages\video\video.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\vlc\vlc.js">
+      <PackagePath>pages\vlc\vlc.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\Scripts\jquery-2.1.3.intellisense.js">
       <PackagePath>Scripts\jquery-2.1.3.intellisense.js</PackagePath>
@@ -216,6 +242,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.html">
       <PackagePath>pages\video\video.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\vlc\vlc.html">
+      <PackagePath>pages\vlc\vlc.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\Scripts\jquery-2.1.3.min.map">
       <PackagePath>Scripts\jquery-2.1.3.min.map</PackagePath>

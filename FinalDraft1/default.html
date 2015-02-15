@@ -16,12 +16,22 @@
     <script src="/js/data.js"></script>
     <script src="/js/navigator.js"></script>
     <script src="/js/default.js"></script>
+    <script src="js/globals.js"></script>
 </head>
 <body class="phone">
     <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/hub/hub.html'}"></div>
     <!-- <div id="appbar" data-win-control="WinJS.UI.AppBar">
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}" type="button"></button>
     </div> -->
+
+    <!-- BEGINTEMPLATE: Template code for AppBar -->
+    <div id="fileManagerAppBar" data-win-control="WinJS.UI.AppBar" data-win-options="{placement:'bottom'}">
+        <!--SelectAll command-->
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdSelect',label:'Select Items',icon:'add',section:'selection',extraClass:'singleSelect',tooltip:'Select items'}"></button>
+        <!--Upload to OneDrive-->
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmdOneDrive',label:'OneDrive',icon:'share',section:'selection',extraClass:'singleSelect',tooltip:'OneDrive'}"></button>
+    </div>
+    <!-- ENDTEMPLATE -->
 
 </body>
 </html>

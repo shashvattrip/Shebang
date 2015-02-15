@@ -6,7 +6,7 @@
     { title: "VLC", text: "A remote to control VLC player", picture: "images/VLC.png" },
     { title: "File Manager", text: "View all files on your computer", picture: "images/folder.png" },
     { title: "Joystick", text: "A virtual joystick to use with your computer", picture: "images/joystick.png" },
-    { title: "Stream", text: "Stream a video from your computer", picture: "images/60orange.png" },
+    { title: "Stream", text: "Stream a video from your computer", picture: "images/stream.png" },
     { title: "Keyboard", text: "Virtual keyboard to control your computer", picture: "images/60vanilla.png" },
     { title: "Accello", text: "Use the phone's accelerometer to play games on your laptop", picture: "images/60vanilla.png" },
     { title: "File Transfer", text: "File transfer", picture: "images/filetransfer.png" }

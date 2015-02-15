@@ -9,7 +9,7 @@
         ready: function (element, options) {
             // TODO: Initialize the page here.
             document.querySelector("#pickPick").addEventListener("click", pickSinglePhoto, false);
-
+            console.log(MyGlobals.serverLink);
             //pickSinglePhoto();
 
 
@@ -68,8 +68,9 @@
                 var formData = new FormData();
                 formData.append("file", blob);
                 console.log(filePicked.name);
-                formData.append("fileName", filePicked.name)
-                var options = { url: "http://192.168.1.9:8080/upload", type: "post", data: formData, headers: { "Content-Type": "multipart/form-data" } };
+                formData.append("fileName", filePicked.name);
+                var serverUrl = MyGlobals.serverLink;
+                var options = { url: serverUrl + "/upload", type: "post", data: formData, headers: { "Content-Type": "multipart/form-data" } };
                 var request = WinJS.xhr(options);
                 request.done(function (response) {
                     console.log("Upload successful!");

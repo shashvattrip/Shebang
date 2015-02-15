@@ -3,7 +3,49 @@
 <head>
     <meta charset="utf-8" />
     <title>filemanager</title>
+    <style>
+      
 
+       .fm-mediumListIconTextItem
+{
+    width: 175px;
+    height: 70px;
+    padding: 5px;
+    overflow: hidden;
+    display: -ms-grid;
+}
+
+    .fm-mediumListIconTextItem img.fm-mediumListIconTextItem-Image 
+    {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        -ms-grid-column: 1;
+    }
+
+    .fm-mediumListIconTextItem .fm-mediumListIconTextItem-Detail
+    {
+        margin: 5px;
+        -ms-grid-column: 2;
+    }
+
+/* Change the size of the ListView when the app is snapped. */
+/*@media screen and (-ms-view-state: snapped) {
+     .win-listview
+    {
+        width: 300px;
+        height: 300px;
+    }
+}*/
+/* Change the size of the ListView when the app is in portrait mode. */
+/*@media screen and (-ms-view-state: fullscreen-portrait) {
+     .win-listview
+    {
+        width: 300px;
+        height: 600px;
+    }
+}*/
+    </style>
     <!--<link href="filemanager.css" rel="stylesheet" />-->
     <script src="filemanager.js"></script>
     <!--<script src="../../Scripts/jquery-2.1.3.js"></script>-->
@@ -16,10 +58,11 @@
                 <span class="pagetitle" style="font-size:20px;">KONNECT</span>
             </h1>
         </header>
-        <header class="page-header" aria-label="Header content" role="banner">
-            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+
+        <header class="page-header" aria-label="Header content" role="banner" style="margin-bottom:90px;">
+            <!--<button class="back-button" data-win-control="WinJS.UI.BackButton"></button>-->
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to filemanager</span>
+                <span class="" style="font-size:60px;font-weight:400;">File Manager</span>
             </h1>
         </header>
         
@@ -27,18 +70,17 @@
             
             <div id="articleListViewTemplate"
                  data-win-control="WinJS.Binding.Template">
-                <div class="itemContainer">
-                    <div class="itemTitle"
+                <div class="fm-mediumListIconTextItem">
+                    <img data-win-bind="src: type" alt="img" class="fm-mediumListIconTextItem-Image" />
+
+                    <div class="fm-mediumListIconTextItem-Detail"
                          data-win-bind="innerText:title"></div>
-                    <br />
-                    <div class="itemPubDate"
-                         data-win-bind="innerText:pubDate"></div>
                 </div>
             </div>
 
             <div id="articleListView"
                  data-win-control="WinJS.UI.ListView"
-                 data-win-options="{itemTemplate: select('#articleListViewTemplate')}">
+                 data-win-options="{itemTemplate: select('#articleListViewTemplate'), layout: {type: WinJS.UI.GridLayout}}">
             </div>
 
             

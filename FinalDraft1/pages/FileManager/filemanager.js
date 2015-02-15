@@ -5,15 +5,17 @@
     var pageOptions;
     var articlesList = [];
     var counter = 0;
+    var selectionModeActive = false;
     function onPageNavigatedTo(url) {
         
         articlesList = [];
-        if (typeof (url) == "undefined") {
-            url = "root";
+        if (url == null) {
+            url = "";
         }
         counter++;
-        console.log("Calling Api : http://localhost:8080/api/fm/" + url);
-        var promise = WinJS.xhr({ url: "http://localhost:8080/api/fm/" + url });
+        var serverLink = MyGlobals.serverLink;
+        console.log("Calling Api : " + serverLink + "/files/" + url);
+        var promise = WinJS.xhr({ url: serverLink + "/files/" + url });
         promise.done(
            // Complete function
            
@@ -25,6 +27,9 @@
                    article.title = items.contents[ctr].title;
                    article.pubDate = "date";
                    article.absoluteUrl = items.contents[ctr].absoluteUrl;
+                   //article.fileType = items.contents[ctr].type;
+                   article.fileType = "/images/folder.png";
+
                    articlesList.push(article);
                }
 
@@ -33,14 +38,14 @@
                articleListView.itemDataSource = dataList.dataSource;
 
                //define events on listView items
-               articleListView.addEventListener("iteminvoked", function (eventInfo) {
-                   WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: articlesList[eventInfo.detail.itemIndex].absoluteUrl });
-               });
+               articleListView.addEventListener("iteminvoked", navigateToPage,false);
            },
 
            // Error function
            function (response) {
                // handle error here...
+               var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
+               erroMsg.showAsync();
            },
 
            // Progress function
@@ -64,6 +69,7 @@
             //makeAjaxCall(options.url);
             
             onPageNavigatedTo(options.url);
+            initAppBar();
 
         },
 
@@ -79,33 +85,84 @@
     });
 
 
+    function initAppBar() {
+        var appBar = document.getElementById("fileManagerAppBar").winControl;
+        appBar.disabled = false;
+        var oneDriveCommand = appBar.getCommandById("cmdOneDrive");
+
+        document.querySelector("#cmdSelect").addEventListener("click", doClickSelect, false);
+        
+        oneDriveCommand.disabled = false;
+
+        oneDriveCommand.addEventListener("click", function (eventInfo) {
+            //check if items are selected in the listview
+            var listView = document.getElementById('articleListView').winControl;
+            var indicesOfSelectedItems = listView.selection.getIndices();
+            //console.log(listView.selection.getIndices());
+            if (listView.selection.getIndices().length == 0) {
+                //console.log("nothing selected!");
+                var erroMsg = new Windows.UI.Popups.MessageDialog("Select folders/files to share");
+                erroMsg.showAsync();
+                return;
+            }
+            var urlArray = [];
+            //send the absoluteUrl of all the folders/files selected
+            for (var i = 0; i < indicesOfSelectedItems.length; i++) {
+                urlArray.push(articlesList[indicesOfSelectedItems[i]].absoluteUrl);
+                console.log(articlesList[indicesOfSelectedItems[i]].absoluteUrl);
+            }
+            //console.log(urlArray);
+            //send ajax request 
+            console.log("share to onedrive");
+        }, false);
+    }
 
 
-    //var jsonResponse;
-    //function makeAjaxCall(url) {
-    //    console.log("making ajax to " + url);
-    //    var url = encodeURI("http://localhost:8080/api");
-    //    console.log(url);
-    //    $.getJSON(url, function (data) {
-    //        jsonResponse = data;
-    //        populateView(data);
-    //    });
-    //}
-    
-    
-    //function populateView(data) {
-    //    var targetDiv = $('#listView');
-    //    for (var i = 0 ; i < data.contents.length;i++) {
-    //        targetDiv.append("<div style='width:100%;height:100px;'><img style='background-color:red;' id='as' class='linkClass'/><p id='p'>" + data.contents[i].title + "</p></div>");
-    //        //$(".last().attr("id", i);
-    //        $('#as').attr("id", i);
-    //    }
-    //    WinJS.Utilities.query(".linkClass").listen("click", fileManagerClickEventHandler, false);
-    //}
-    //function fileManagerClickEventHandler(eventInfo) {
-    //    console.log("Called link handler");
-    //    eventInfo.preventDefault();
-    //    var link = eventInfo.target;
-    //    WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: jsonResponse.contents[link.id].absoluteUrl});
-    //}
+    function doClickSelect() {
+
+        console.log("Clicking select");
+        var articleListView = document.getElementById('articleListView').winControl;
+        //if selection mode is active then add oniteminvoked eventhandler
+
+        if (selectionModeActive == false) {
+            articleListView.removeEventListener("iteminvoked", navigateToPage);
+        } else {
+            articleListView.addEventListener("iteminvoked", navigateToPage, false);
+        }
+        selectionModeActive = !selectionModeActive;
+        var listViewEl = document.getElementById("articleListView").winControl;
+
+        if (listViewEl) {
+            var listView = listViewEl.element.winControl;
+            toggleSelectionMode(listView);
+        }
+    }
+
+    function toggleSelectionMode(listView) {
+        if (listView.selectionModeActive) {
+            listView.selectionModeActive = false;
+            listView.tapBehavior = WinJS.UI.TapBehavior.invokeOnly;
+            listView.selectionMode = WinJS.UI.SelectionMode.none;
+            listView.selection.clear();
+        } else {
+            listView.selectionModeActive = true;
+            listView.tapBehavior = WinJS.UI.TapBehavior.toggleSelect;
+            listView.selectionMode = WinJS.UI.SelectionMode.multi;
+            //var articleListView = document.getElementById('articleListView').winControl;
+            //articleListView.removeEventListener("iteminvoked");
+        }
+        //updateAppBar();
+        return listView.selectionModeActive;
+    };
+
+    function navigateToPage(eventInfo) {
+        //if filetype is directory
+        if (articlesList[eventInfo.detail.itemIndex].type == "/images/folder.png") {
+            WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: articlesList[eventInfo.detail.itemIndex].absoluteUrl });
+        } else {
+            //do  nothing
+        }
+        
+    }
+
 })();

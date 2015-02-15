@@ -7,29 +7,29 @@
         // the resulting elements have been parented to the DOM. 
         ready: function (element, options) {
             options = options || {};
-
+            initAppBar();
             var listView = document.getElementById("basicListView").winControl;
             listView.addEventListener("iteminvoked", function (eventInfo) {
                 var index = eventInfo.detail.itemIndex;
                 console.log(eventInfo.detail.itemIndex);
                 switch (index) {
-                    case 0: WinJS.Navigation.navigate("/pages/audio/audio.html", { url: "root" });
+                    case 0: WinJS.Navigation.navigate("/pages/audio/audio.html");
                         break;
-                    case 1: WinJS.Navigation.navigate("/pages/audio/audio.html", { url: "root" });
+                    case 1: WinJS.Navigation.navigate("/pages/vlc/vlc.html");
                         break;
-                    case 2: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: "root" });
+                    case 2: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", {url:null});
                         break;
-                    case 3: WinJS.Navigation.navigate("/pages/joystick/joystick.html", { url: "root" });
+                    case 3: WinJS.Navigation.navigate("/pages/joystick/joystick.html");
                         break;
-                    case 4: WinJS.Navigation.navigate("/pages/stream/stream.html", { url: "root" });
+                    case 4: WinJS.Navigation.navigate("/pages/stream/stream.html");
                         break;
-                    case 5: WinJS.Navigation.navigate("/pages/keyboard/keyboard.html", { url: "root" });
+                    case 5: WinJS.Navigation.navigate("/pages/keyboard/keyboard.html");
                         break;
-                    case 6: WinJS.Navigation.navigate("/pages/audio/audio.html", { url: "root" });
+                    case 6: WinJS.Navigation.navigate("/pages/audio/audio.html");
                         break;
-                    case 7: WinJS.Navigation.navigate("/pages/filetransfer/filetransfer.html", { url: "root" });
+                    case 7: WinJS.Navigation.navigate("/pages/filetransfer/filetransfer.html");
                         break;
-                    default: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: "root" });
+                    default: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html");
                 }
                 
             });
@@ -45,5 +45,10 @@
         Section3Control: ControlConstructor
     });
 
+
+    function initAppBar() {
+        var appBar = document.getElementById("fileManagerAppBar").winControl;
+        appBar.disabled = true;
+    }
     
 })();

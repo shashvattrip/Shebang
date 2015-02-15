@@ -3,6 +3,7 @@
 (function () {
     "use strict";
     var PAGEDOMELEMENT;
+    var serverLink = MyGlobals.serverLink;
     WinJS.UI.Pages.define("/pages/audio/audio.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
@@ -43,7 +44,7 @@
     }
 
     function lowerVolume() {
-        var url = encodeURI("http://localhost:8080/api/audio/LowerVolume");
+        var url = serverLink + "/wmp/LowerVolume";
         console.log(url);
         $.getJSON(url, function (data) {
             console.log("Response from server : " + data.status);
@@ -55,7 +56,7 @@
     }
     function raiseVolume() {
         //console.log("lower volume API called");
-        var url = encodeURI("http://localhost:8080/api/audio/RaiseVolume");
+        var url = serverLink + "/wmp/RaiseVolume";
         console.log(url);
         $.getJSON(url, function (data) {
             console.log("Response from server : " + data.status);
@@ -67,7 +68,7 @@
     }
     function playSong() {
         
-        var url = encodeURI("http://localhost:8080/api/audio/Play");
+        var url = serverLink + "/wmp/Play";
         console.log(url);
         $.getJSON(url, function (data) {
             console.log("Response from server : " + data.status);
@@ -80,7 +81,7 @@
 
     function playNext() {
         
-        var url = encodeURI("http://localhost:8080/api/audio/Next");
+        var url = serverLink + "/wmp/Forward";
         console.log(url);
         $.getJSON(url, function (data) {
             console.log("Response from server : " + data.status);
@@ -93,7 +94,7 @@
 
     function playPrev() {
         console.log("lower volume API called");
-        var url = encodeURI("http://localhost:8080/api/audio/Prev");
+        var url = serverLink + "/wmp/Restart";
         console.log(url);
         $.getJSON(url, function (data) {
             console.log("Response from server : " + data.status);
