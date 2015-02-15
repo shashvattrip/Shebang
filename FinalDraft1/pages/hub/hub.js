@@ -9,6 +9,8 @@
     var section3Group = Data.resolveGroupReference("group4");
     var section3Items = Data.getItemsFromGroup(section3Group);
 
+    //enterPage = WinJS.UI.Animation.enterPage(rootGrid, null);
+
     WinJS.UI.Pages.define("/pages/hub/hub.html", {
         processed: function (element) {
             return WinJS.Resources.processAll(element);

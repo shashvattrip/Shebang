@@ -1,22 +1,20 @@
-﻿.filetransfer section {
+﻿.kinect section {
 	margin: auto 120px;
 }
 
-.phone .filetransfer .page-section {
+.phone .kinect .page-section {
 	margin: auto 24px;
 }
 
-.phone .filetransfer .page-header .titlearea {
+.phone .kinect .page-header .titlearea {
 	-ms-grid-column: 1;
 	margin-top: 37px;
 	margin-left: 24px;
 	font-size: 28pt;
 	width: calc(100vw - 20px);
-    
-
 }
 
-.phone .filetransfer .back-button {
+.phone .kinect .back-button {
 	display: none;
 }
 

@@ -11,12 +11,12 @@
             // TODO: Initialize the page here.
             console.log(element);
             PAGEDOMELEMENT = element;
-            document.getElementById("playBackControl").addEventListener("change", playBackControlEventHandler, false);
-            document.getElementById("lowerVolume").addEventListener("click", lowerVolume, false);
-            document.getElementById("raiseVolume").addEventListener("click", raiseVolume, false);
-            document.getElementById("playSong").addEventListener("click", playSong, false);
-            document.getElementById("prevSong").addEventListener("click", playPrev, false);
-            document.getElementById("nextSong").addEventListener("click", playNext, false);
+            //document.getElementById("playBackControl").addEventListener("change", playBackControlEventHandler, false);
+            //document.getElementById("lowerVolume").addEventListener("click", lowerVolume, false);
+            //document.getElementById("raiseVolume").addEventListener("click", raiseVolume, false);
+            //document.getElementById("playSong").addEventListener("click", playSong, false);
+            //document.getElementById("prevSong").addEventListener("click", playPrev, false);
+            //document.getElementById("nextSong").addEventListener("click", playNext, false);
         },
 
         unload: function (elements) {

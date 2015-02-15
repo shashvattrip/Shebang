@@ -2,6 +2,10 @@
 	margin: auto 120px;
 }
 
+.vlc{
+    height: 1200px;
+}
+
 .phone .vlc .page-section {
 	margin: auto 24px;
 }
@@ -18,7 +22,38 @@
 	display: none;
 }
 
-.fragment {
+.vlc .page-section{
+    overflow-y:scroll;
+    height: 1200px;
+}
+
+.vlc .page-section .volume-controls{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.vlc .page-section .play-controls{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.vlc .page-section .pause-controls{
+    width: 90%;
+    margin: 0 auto;
+}
+
+    .vlc .page-section .pause-controls img:first-of-type {
+        margin-left: 15%;
+    }
+
+    .vlc .page-section .pause-controls img:last-of-type {
+        margin-right: 15%;
+    }
+
+/*.fragment {
 	-ms-grid-columns: 1fr;
 	-ms-grid-rows: 128px 1fr;
 	display: -ms-grid;
@@ -29,4 +64,4 @@
 	.fragment section[role=main] {
 		-ms-grid-row: 2;
 		height: 100%;
-	}
+	}*/

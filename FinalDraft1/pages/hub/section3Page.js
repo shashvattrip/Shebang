@@ -25,9 +25,11 @@
                         break;
                     case 5: WinJS.Navigation.navigate("/pages/keyboard/keyboard.html");
                         break;
-                    case 6: WinJS.Navigation.navigate("/pages/audio/audio.html");
+                    case 6: WinJS.Navigation.navigate("/pages/accel/accel.html");
                         break;
                     case 7: WinJS.Navigation.navigate("/pages/filetransfer/filetransfer.html");
+                        break;
+                    case 8: WinJS.Navigation.navigate("/pages/kinect/kinect.html");
                         break;
                     default: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html");
                 }

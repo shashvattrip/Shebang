@@ -6,6 +6,8 @@
     var articlesList = [];
     var counter = 0;
     var selectionModeActive = false;
+    var articleListView;
+    var promise;
     function onPageNavigatedTo(url) {
         
         articlesList = [];
@@ -14,30 +16,43 @@
         }
         counter++;
         var serverLink = MyGlobals.serverLink;
-        console.log("Calling Api : " + serverLink + "/files/" + url);
-        var promise = WinJS.xhr({ url: serverLink + "/files/" + url });
+        console.log("Calling Api : " + serverLink + "/files" + url);
+        var LINK = encodeURI(serverLink + "/files" + url);
+        console.log(LINK);
+        promise = WinJS.xhr({ url: LINK });
         promise.done(
            // Complete function
            
            function (response) {
+               articlesList = [];
+
                var items = JSON.parse(response.responseText);
-               console.log(counter);
+               console.log("content response");
+               console.log(items.contents);
                for (var ctr = 0; ctr < items.contents.length; ctr++) {
                    var article = {};
                    article.title = items.contents[ctr].title;
                    article.pubDate = "date";
                    article.absoluteUrl = items.contents[ctr].absoluteUrl;
-                   //article.fileType = items.contents[ctr].type;
-                   article.fileType = "/images/folder.png";
-
+                   if (items.contents[ctr].type == "audio") {
+                       article.type = "/images/music.png";
+                   } else if (items.contents[ctr].type == "video") {
+                       article.type = "/images/movie.png";
+                   } else if (items.contents[ctr].type == "folder") {
+                       article.type = "/images/folder1.png";
+                   } else {
+                       article.type = "/images/gray.png";
+                   }
                    articlesList.push(article);
                }
-
+               console.log(articlesList);
                var dataList = new WinJS.Binding.List(articlesList);
-               var articleListView = document.getElementById('articleListView').winControl;
+               
+               articleListView = document.getElementById('articleListView').winControl;
                articleListView.itemDataSource = dataList.dataSource;
 
                //define events on listView items
+               console.log("eventhandler ativated");
                articleListView.addEventListener("iteminvoked", navigateToPage,false);
            },
 
@@ -130,6 +145,7 @@
             articleListView.addEventListener("iteminvoked", navigateToPage, false);
         }
         selectionModeActive = !selectionModeActive;
+        console.log("selectionMode"+selectionModeActive);
         var listViewEl = document.getElementById("articleListView").winControl;
 
         if (listViewEl) {
@@ -157,6 +173,8 @@
 
     function navigateToPage(eventInfo) {
         //if filetype is directory
+        console.log("Page changed");
+        console.log(articlesList[eventInfo.detail.itemIndex].type);
         if (articlesList[eventInfo.detail.itemIndex].type == "/images/folder.png") {
             WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: articlesList[eventInfo.detail.itemIndex].absoluteUrl });
         } else {

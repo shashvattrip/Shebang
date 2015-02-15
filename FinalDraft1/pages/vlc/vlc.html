@@ -4,19 +4,41 @@
     <meta charset="utf-8" />
     <title>vlc</title>
 
-    <!--<link href="vlc.css" rel="stylesheet" />-->
+    <link href="vlc.css" rel="stylesheet" />
     <script src="vlc.js"></script>
 </head>
 <body>
     <div class="vlc fragment">
-        <header class="page-header" aria-label="Header content" role="banner">
-            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+        <header aria-label="Header content" role="banner">
+            <button class="titlearea backbutton" data-win-control="WinJS.UI.BackButton"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to vlc</span>
+                <span class="pagetitle" style="font-size:20px;">KONNECT</span>
             </h1>
         </header>
+        <header class="page-header" aria-label="Header content" role="banner" style="margin-bottom:100px;">
+            <!--<button class="back-button" data-win-control="WinJS.UI.BackButton"></button>-->
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="" style="font-size:60px;font-weight:400;">vlc</span>
+            </h1>
+        </header>
+
         <section class="page-section" aria-label="Main content" role="main">
-            <p>Content goes here.</p>
+            <div class="volume-controls">
+                <img src="../../images/vlc/volume_down-4.png" style="margin:0 auto;"/>
+                <img src="../../images/vlc/mute-48.png" style="margin:0 auto;" />
+                <img src="../../images/vlc/volume_up-48.png" style="margin:0 auto;" />
+            </div>
+            <!--<input id="playBackControl" type="range" min="0" max="100" step="5" value="50" />-->
+            <div class="play-controls">
+                <img src="../../images/vlc/skip_to_start-48.png" />
+                <img src="../../images/vlc/play-48.png" />
+                <img src="../../images/vlc/end-48.png" />
+            </div>
+            <div class="pause-controls">
+                <img src="../../images/vlc/pause-48.png" />
+                <img src="../../images/vlc/stop-48.png" />
+            </div>
+
         </section>
     </div>
 </body>

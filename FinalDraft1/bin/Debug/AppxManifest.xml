@@ -25,7 +25,7 @@
     <Application Id="App" StartPage="default.html">
       <m3:VisualElements DisplayName="Konnect" Square150x150Logo="images\logo150.jpg" Square44x44Logo="images\logo44.jpg" Description="FinalDraft1" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="images\logo310.jpg" Square71x71Logo="images\logo71.jpg"></m3:DefaultTile>
-        <m3:SplashScreen Image="images\SplashScreen.png" />
+        <m3:SplashScreen Image="images\splash.png" BackgroundColor="#363636" />
       </m3:VisualElements>
     </Application>
   </Applications>
