@@ -25,6 +25,9 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.css">
       <PackagePath>pages\FileManager\filemanager.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\filetransfer\filetransfer.css">
+      <PackagePath>pages\filetransfer\filetransfer.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\hubPhone.css">
       <PackagePath>pages\hub\hubPhone.css</PackagePath>
     </AppxPackagedFile>
@@ -40,6 +43,9 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\css\ui-themed.theme-light.css">
       <PackagePath>css\ui-themed.theme-light.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\joystick\joystick.css">
+      <PackagePath>pages\joystick\joystick.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\keyboard\keyboard.css">
       <PackagePath>pages\keyboard\keyboard.css</PackagePath>
     </AppxPackagedFile>
@@ -52,6 +58,18 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\video\video.css">
       <PackagePath>pages\video\video.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\abstract-background-images.png">
+      <PackagePath>images\abstract-background-images.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\filetransfer.png">
+      <PackagePath>images\filetransfer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\folder.png">
+      <PackagePath>images\folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\joystick.png">
+      <PackagePath>images\joystick.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square150x150Logo.scale-240.png">
       <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -59,6 +77,9 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Square44x44Logo.scale-240.png">
       <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\VLC.png">
+      <PackagePath>images\VLC.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\Wide310x150Logo.scale-240.png">
       <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
@@ -79,6 +100,12 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\gray.png">
       <PackagePath>images\gray.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\WMV.png">
+      <PackagePath>images\WMV.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\images\konnect.jpg">
+      <PackagePath>images\konnect.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\js\data.js">
       <PackagePath>js\data.js</PackagePath>
     </AppxPackagedFile>
@@ -94,8 +121,14 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.js">
       <PackagePath>pages\FileManager\filemanager.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\filetransfer\filetransfer.js">
+      <PackagePath>pages\filetransfer\filetransfer.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\hub.js">
       <PackagePath>pages\hub\hub.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\remotesListData.js">
+      <PackagePath>pages\hub\remotesListData.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\section1Page.js">
       <PackagePath>pages\hub\section1Page.js</PackagePath>
@@ -111,6 +144,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\item\item.js">
       <PackagePath>pages\item\item.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\joystick\joystick.js">
+      <PackagePath>pages\joystick\joystick.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\keyboard\keyboard.js">
       <PackagePath>pages\keyboard\keyboard.js</PackagePath>
@@ -142,6 +178,9 @@
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\FileManager\filemanager.html">
       <PackagePath>pages\FileManager\filemanager.html</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\filetransfer\filetransfer.html">
+      <PackagePath>pages\filetransfer\filetransfer.html</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\hub\hub.html">
       <PackagePath>pages\hub\hub.html</PackagePath>
     </AppxPackagedFile>
@@ -162,6 +201,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\default.html">
       <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\joystick\joystick.html">
+      <PackagePath>pages\joystick\joystick.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Shashvat\documents\visual studio 2013\Projects\FinalDraft1\FinalDraft1\pages\keyboard\keyboard.html">
       <PackagePath>pages\keyboard\keyboard.html</PackagePath>

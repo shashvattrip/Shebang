@@ -2,12 +2,14 @@
 // http://go.microsoft.com/fwlink/?LinkId=232511
 (function () {
     "use strict";
-
+    var PAGEDOMELEMENT;
     WinJS.UI.Pages.define("/pages/audio/audio.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
+            console.log(element);
+            PAGEDOMELEMENT = element;
             document.getElementById("playBackControl").addEventListener("change", playBackControlEventHandler, false);
             document.getElementById("lowerVolume").addEventListener("click", lowerVolume, false);
             document.getElementById("raiseVolume").addEventListener("click", raiseVolume, false);
@@ -16,8 +18,15 @@
             document.getElementById("nextSong").addEventListener("click", playNext, false);
         },
 
-        unload: function () {
+        unload: function (elements) {
             // TODO: Respond to navigations away from this page.
+            console.log(elements);
+            
+            //elements.
+            var controlDiv = document.getElementsByTagName("style");
+            console.log(controlDiv);
+            //controlDiv.parentNode.removeChild()
+            //.parentNode.removeChild();
         },
 
         updateLayout: function (element) {

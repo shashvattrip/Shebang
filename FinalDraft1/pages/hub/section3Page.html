@@ -3,69 +3,37 @@
 <head>
     <title></title>
     <script src="/pages/hub/section3Page.js"></script>
+    <script src="remotesListData.js"></script>
+
+    <style>
+        .win-listview .win-itembox, .win-itemcontainer .win-itembox {
+            background-color:transparent;
+        }
+    </style>
 </head>
 <body>
     <div class="fragment section3page">
         <section aria-label="Main content" role="main">
 
-            <div class="itemTemplate">
-                <div id="audio" class="templatecontainer">
-                    <img src="" style="background:darkGray;" />
-                    <div class="itemcontainer">
-                        <div class="itemtitle label-extralarge">audio</div>
-                        <div class="label-mediummid" style="height: 82px;">short des</div>
+            <div id="mediumListIconTextTemplate" data-win-control="WinJS.Binding.Template">
+                <div style="width: 282px; height: 100px; padding: 5px; overflow: hidden; display: -ms-grid; background-color:transparent;">
+
+                    <!-- Displays the "picture" field. -->
+                    <img src="#" style="width: 100px; height: 100px; -ms-grid-column: 1;"
+                         data-win-bind="alt: title; src: picture" />
+                    <div style=" -ms-grid-column: 2;">
+
+                        <!-- Displays the "title" field. -->
+                        <h4 data-win-bind="innerText: title" style="font-size:28px;font-weight:700;"></h4>
+                        <h5 data-win-bind="innerText: text" style="font-size:16px;font-weight:500;"></h5>
                     </div>
                 </div>
             </div>
 
-            <div class="itemTemplate">
-                <div id="video" class="templatecontainer">
-                    <img src="" style="background:lightGray;" />
-                    <div class="itemcontainer">
-                        <div class="itemtitle label-extralarge">video</div>
-                        <div class="label-mediummid" style="height: 82px;">short des</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="itemTemplate">
-                <div id="fileManager" class="templatecontainer">
-                    <img src="" style="background:darkGray;" />
-                    <div class="itemcontainer">
-                        <div class="itemtitle label-extralarge">file manager</div>
-                        <div class="label-mediummid" style="height: 82px;">short des</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="itemTemplate">
-                <div class="templatecontainer">
-                    <img src="" style="background:lightGray;" />
-                    <div id="mouse" class="itemcontainer">
-                        <div class="itemtitle label-extralarge">mouse</div>
-                        <div class="label-mediummid" style="height: 82px;">short des</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="itemTemplate">
-                <div class="templatecontainer">
-                    <img src="" style="background:lightGray;" />
-                    <div id="keyboard" class="itemcontainer">
-                        <div class="itemtitle label-extralarge">keyboard</div>
-                        <div class="label-mediummid" style="height: 82px;">short des</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="itemTemplate">
-                <div class="templatecontainer">
-                    <img src="" style="background:lightGray;" />
-                    <div id="stream" class="itemcontainer">
-                        <div class="itemtitle label-extralarge">stream</div>
-                        <div class="label-mediummid" style="height: 82px;">short des</div>
-                    </div>
-                </div>
+            <div id="basicListView" data-win-control="WinJS.UI.ListView"
+                 data-win-options="{itemDataSource : DataExample.itemList.dataSource,
+            itemTemplate: select('#mediumListIconTextTemplate'),
+                 layout: {type: WinJS.UI.ListLayout}}">
             </div>
 
             <!--<div class="itemTemplate" data-win-control="WinJS.Binding.Template">

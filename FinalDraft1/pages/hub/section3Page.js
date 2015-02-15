@@ -8,20 +8,32 @@
         ready: function (element, options) {
             options = options || {};
 
-            WinJS.Utilities.query("#audio").listen("click", audioClickEventHandler, false);
-            WinJS.Utilities.query("#video").listen("click", videoClickEventHandler, false);
-            WinJS.Utilities.query("#mouse").listen("click", mouseClickEventHandler, false);
-            WinJS.Utilities.query("#fileManager").listen("click", fileManagerClickEventHandler, false);
-            WinJS.Utilities.query("#keyboard").listen("click", keyboardClickEventHandler, false);
-            WinJS.Utilities.query("#stream").listen("click", streamClickEventHandler, false);
+            var listView = document.getElementById("basicListView").winControl;
+            listView.addEventListener("iteminvoked", function (eventInfo) {
+                var index = eventInfo.detail.itemIndex;
+                console.log(eventInfo.detail.itemIndex);
+                switch (index) {
+                    case 0: WinJS.Navigation.navigate("/pages/audio/audio.html", { url: "root" });
+                        break;
+                    case 1: WinJS.Navigation.navigate("/pages/audio/audio.html", { url: "root" });
+                        break;
+                    case 2: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: "root" });
+                        break;
+                    case 3: WinJS.Navigation.navigate("/pages/joystick/joystick.html", { url: "root" });
+                        break;
+                    case 4: WinJS.Navigation.navigate("/pages/stream/stream.html", { url: "root" });
+                        break;
+                    case 5: WinJS.Navigation.navigate("/pages/keyboard/keyboard.html", { url: "root" });
+                        break;
+                    case 6: WinJS.Navigation.navigate("/pages/audio/audio.html", { url: "root" });
+                        break;
+                    case 7: WinJS.Navigation.navigate("/pages/filetransfer/filetransfer.html", { url: "root" });
+                        break;
+                    default: WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: "root" });
+                }
+                
+            });
             
-
-            //var listView = element.querySelector(".itemslist").winControl;
-            //console.log(options.dataSource);
-            //listView.itemDataSource = options.dataSource;
-            //listView.layout = options.layout;
-            //listView.oniteminvoked = options.oniteminvoked;
-            initListView();
         }
     });
 
@@ -33,40 +45,5 @@
         Section3Control: ControlConstructor
     });
 
-    function fileManagerClickEventHandler(eventInfo) {
-        eventInfo.preventDefault();
-        var link = eventInfo.target;
-        WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: "root", name: "tripathi", previous: "none" });
-    }
-
-    function audioClickEventHandler(eventInfo) {
-        eventInfo.preventDefault();
-        var link = eventInfo.target;
-        WinJS.Navigation.navigate("/pages/audio/audio.html");
-    }
-
-    function keyboardClickEventHandler(eventInfo) {
-        eventInfo.preventDefault();
-        var link = eventInfo.target;
-        WinJS.Navigation.navigate("/pages/keyboard/keyboard.html");
-    }
-
-    function mouseClickEventHandler(eventInfo) {
-        eventInfo.preventDefault();
-        var link = eventInfo.target;
-        WinJS.Navigation.navigate("/pages/mouse/mouse.html");
-    }
-    function videoClickEventHandler(eventInfo) {
-        eventInfo.preventDefault();
-        var link = eventInfo.target;
-        WinJS.Navigation.navigate("/pages/video/video.html");
-    }
-    function streamClickEventHandler(eventInfo) {
-        eventInfo.preventDefault();
-        var link = eventInfo.target;
-        WinJS.Navigation.navigate("/pages/stream/stream.html");
-    }
-    function initListView() {
-
-    }
+    
 })();

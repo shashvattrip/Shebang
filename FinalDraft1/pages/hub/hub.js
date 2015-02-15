@@ -17,6 +17,8 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
+            var s = Windows.UI.ViewManagement.StatusBar.getForCurrentView();
+            s.showAsync(); // shows the statusbar
             var hub = element.querySelector(".hub").winControl;
             hub.onheaderinvoked = function (args) {
                 args.detail.section.onheaderinvoked(args);

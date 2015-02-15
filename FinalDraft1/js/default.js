@@ -14,6 +14,7 @@
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
+
             } else {
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
@@ -34,6 +35,28 @@
             });
 
             args.setPromise(p);
+        } else if (args.detail.kind === activation.ActivationKind.pickFileContinuation) {
+            console.log("Handle Pick File Continuation event");
+            var p = WinJS.UI.processAll().
+                    then(function () {
+
+                        // Navigate to either the first scenario or to the last running scenario
+                        // before suspension or termination.
+                        var url = "/pages/filetransfer/filetransfer.html";
+                        var initialState = {};
+                        var navHistory = app.sessionState.navigationHistory;
+                        if (navHistory) {
+                            nav.history = navHistory;
+                            url = navHistory.current.location;
+                            initialState = navHistory.current.state || initialState;
+                        }
+                        initialState.activationKind = args.detail.kind;
+                        initialState.activatedEventArgs = args.detail.detail;
+                        nav.history.current.initialPlaceholder = true;
+                        console.log(":::::::");
+                        console.log(url, initialState);
+                        return nav.navigate(url, initialState);
+                    });
         }
     });
 
