@@ -10,7 +10,7 @@
             // TODO: Initialize the page here.
             document.querySelector("#pickPick").addEventListener("click", pickSinglePhoto, false);
 
-            pickSinglePhoto();
+            //pickSinglePhoto();
 
 
             if (options && options.activationKind === Windows.ApplicationModel.Activation.ActivationKind.pickFileContinuation) {
