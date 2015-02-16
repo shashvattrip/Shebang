@@ -75,7 +75,7 @@
                 request.done(function (response) {
                     console.log("Upload successful!");
                     console.log(response.responseText);
-                    var doneMsg = new Windows.UI.Popups.MessageDialog("Yeah! File transfered to :" + response.responseText);
+                    var doneMsg = new Windows.UI.Popups.MessageDialog("Yeah! File transfered to your desktop!");
                     doneMsg.showAsync();
 
                 }, function (error) {

@@ -80,8 +80,7 @@
                     var request = WinJS.xhr({ url: LINK + "left" });
                     request.done(function () {
                     }, function (error) {
-                        var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                        erroMsg.showAsync();
+                        
                     });
                 }                    
                 if (diff_x < -sens) {
@@ -91,8 +90,7 @@
                     var request = WinJS.xhr({ url: LINK + "right" });
                     request.done(function () {
                     }, function (error) {
-                        var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                        erroMsg.showAsync();
+                        
                     });
                 }
                 if (diff_y > sens) {
@@ -102,8 +100,7 @@
                     var request = WinJS.xhr({ url: LINK + "up" });
                     request.done(function () {
                     }, function (error) {
-                        var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                        erroMsg.showAsync();
+                        
                     });
                 }
                 if (diff_y < -sens) {
@@ -112,8 +109,7 @@
                     var request = WinJS.xhr({ url: LINK + "down" });
                     request.done(function () {
                     }, function (error) {
-                        var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                        erroMsg.showAsync();
+                        
                     });
                 }
                     

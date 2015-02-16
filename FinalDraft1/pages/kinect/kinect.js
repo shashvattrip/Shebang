@@ -29,11 +29,9 @@
         var promise = WinJS.xhr({ url: LINK });
         promise.done(function (ev) {
             console.log(ev.responseText);
-            var doneMsg = new Windows.UI.Popups.MessageDialog("Yo! Kinect has been switched on!");
-            doneMsg.showAsync();
+            
         }, function () {
-            var doneMsg = new Windows.UI.Popups.MessageDialog("Oops! Looks like something went wrong!");
-            doneMsg.showAsync();
+            
         });
     }
     function kinectOffEvent(eventInfo) {
@@ -42,22 +40,18 @@
 
         promise.then(function (ev) {
             console.log(ev.responseText);
-            var doneMsg = new Windows.UI.Popups.MessageDialog("Yo! Kinect has been switched off!");
-            doneMsg.showAsync();
+            
         }, function () {
-            var doneMsg = new Windows.UI.Popups.MessageDialog("Oops! Looks like something went wrong!");
-            doneMsg.showAsync();
+            
         });
     }
     function kinectStatusEvent(eventInfo) {
         var LINK = MyGlobals.serverLink + "/kinect/status";
         var promise = WinJS.xhr({ url: LINK });
         promise.then(function (res) {
-            var doneMsg = new Windows.UI.Popups.MessageDialog(res.responseText);
-            doneMsg.showAsync();
+            
         }, function () {
-            var doneMsg = new Windows.UI.Popups.MessageDialog("Oops! Looks like something went wrong!");
-            doneMsg.showAsync();
+            
         });
     }
 

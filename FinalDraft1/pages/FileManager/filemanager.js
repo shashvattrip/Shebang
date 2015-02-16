@@ -15,6 +15,7 @@
             url = "";
         }
         counter++;
+        var dataList;
         var serverLink = MyGlobals.serverLink;
         console.log("Calling Api : " + serverLink + "/files" + url);
         var LINK = encodeURI(serverLink + "/files" + url);
@@ -36,17 +37,21 @@
                    article.absoluteUrl = items.contents[ctr].absoluteUrl;
                    if (items.contents[ctr].type == "audio") {
                        article.type = "/images/music.png";
+                       article.typeIndex = 1;
                    } else if (items.contents[ctr].type == "video") {
                        article.type = "/images/movie.png";
+                       article.typeIndex = 2;
                    } else if (items.contents[ctr].type == "folder") {
                        article.type = "/images/folder1.png";
+                       article.typeIndex = 3;
                    } else {
                        article.type = "/images/file.png";
+                       article.typeIndex = 4;
                    }
                    articlesList.push(article);
                }
                console.log(articlesList);
-               var dataList = new WinJS.Binding.List(articlesList);
+               dataList = new WinJS.Binding.List(articlesList);
                
                articleListView = document.getElementById('articleListView').winControl;
                articleListView.itemDataSource = dataList.dataSource;
@@ -59,8 +64,8 @@
            // Error function
            function (response) {
                // handle error here...
-               var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-               erroMsg.showAsync();
+               //var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
+               //erroMsg.showAsync();
            },
 
            // Progress function
@@ -175,10 +180,19 @@
         //if filetype is directory
         console.log("Page changed");
         console.log(articlesList[eventInfo.detail.itemIndex].type);
-        if (articlesList[eventInfo.detail.itemIndex].type == "/images/folder.png") {
+        if (articlesList[eventInfo.detail.itemIndex].typeIndex == 3) {
             WinJS.Navigation.navigate("/pages/FileManager/filemanager.html", { url: articlesList[eventInfo.detail.itemIndex].absoluteUrl });
         } else {
             //do  nothing
+            //open the File
+            //console.log("test");
+            //console.log(articlesList[eventInfo.detail.itemIndex].absoluteUrl);
+            //var request = WinJS.xhr({ url: articlesList[eventInfo.detail.itemIndex].absoluteUrl });
+            //request.done(function () {
+            //    console.log("file opening");
+            //}, function () {
+            //    console.log("Some error");
+            //});
         }
         
     }

@@ -58,8 +58,8 @@
                 var request = WinJS.xhr({ url: LINK + "down" });
                 request.done(function () {
                 }, function (error) {
-                    var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                    erroMsg.showAsync();
+                    //var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
+                    //erroMsg.showAsync();
                 });
             }
                 
@@ -69,8 +69,8 @@
                 var request = WinJS.xhr({ url: LINK + "up" });
                 request.done(function () {
                 }, function (error) {
-                    var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                    erroMsg.showAsync();
+                    //var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
+                    //erroMsg.showAsync();
                 });
             }
                 
@@ -81,8 +81,8 @@
                 var request = WinJS.xhr({ url: LINK + "left" });
                 request.done(function () {
                 }, function (error) {
-                    var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                    erroMsg.showAsync();
+                    //var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
+                    //erroMsg.showAsync();
                 });
             }
                 
@@ -93,8 +93,8 @@
                 var request = WinJS.xhr({ url: LINK + "right" });
                 request.done(function () {
                 }, function (error) {
-                    var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
-                    erroMsg.showAsync();
+                    //var erroMsg = new Windows.UI.Popups.MessageDialog("Oops. Looks you are not connected to a network!");
+                    //erroMsg.showAsync();
                 });
             }
                 
